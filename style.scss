@@ -2,15 +2,8 @@
 
 @media (max-width: 767.98px) {
     .card2 {
-        .swiper {
-            width: 100%;
-            padding: 50px 0;
-        }
-
-        .swiper-slide {
-            display: flex;
-            justify-content: center;
-        }
+        flex-direction: column;
+        gap: 40px !important;      
     }
     .navigation_social {
         display: none !important; 
