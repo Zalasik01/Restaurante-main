@@ -41,6 +41,28 @@ function initializeSwiper() {
     });
 }
 
+// Função para inicializar o Swiper para os pratos
+function initializePratosSwiper() {
+    var swiper = new Swiper(".pratosSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            }
+        }
+    });
+}
+
 // Função para carregar HTML de arquivos externos
 function loadHTML(elementId, filePath) {
     const xhttp = new XMLHttpRequest();
@@ -61,6 +83,7 @@ function onDOMContentLoaded() {
     // Inicializa os plugins
     initializeAOS();
     initializeSwiper();
+    initializePratosSwiper();
 
     // Prevent reloading the same page
     const currentPath = window.location.pathname;
