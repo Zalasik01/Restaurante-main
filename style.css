@@ -2,6 +2,7 @@
   .card2 {
     flex-direction: column;
     gap: 40px !important;
+    width: 90%;
   }
   .navigation_social {
     display: none !important;
@@ -31,10 +32,34 @@
   .card-text {
     font-size: calc(1.1rem - 1vw);
   }
-  .card2 {
-    width: 90%;
+  .promo-content {
+    width: 80% !important;
+  }
+  .swiper {
+    padding: 20px 0;
+  }
+  .swiper-slide {
+    width: 100%;
+  }
+  .card {
+    width: 90%; /* Ajuste a largura do card para mobile */
   }
 }
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.swiper {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
 button:hover {
   cursor: pointer;
 }

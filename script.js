@@ -17,47 +17,29 @@ function initializeSwiper() {
             prevEl: ".swiper-button-prev",
         },
         breakpoints: {
-            // when window width is >= 320px
             320: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            },
+            480: {
                 slidesPerView: 1,
                 spaceBetween: 20
             },
-            // when window width is >= 480px
-            480: {
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            768: {
                 slidesPerView: 2,
                 spaceBetween: 30
             },
-            // when window width is >= 640px
-            640: {
+            1024: {
                 slidesPerView: 3,
                 spaceBetween: 40
             },
-            // when window width is >= 1024px
-            1024: {
+            1200: {
                 slidesPerView: 4,
                 spaceBetween: 50
-            }
-        }
-    });
-}
-
-// Função para inicializar o Swiper para os pratos
-function initializePratosSwiper() {
-    var swiper = new Swiper(".pratosSwiper", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 30,
             }
         }
     });
@@ -83,7 +65,6 @@ function onDOMContentLoaded() {
     // Inicializa os plugins
     initializeAOS();
     initializeSwiper();
-    initializePratosSwiper();
 
     // Prevent reloading the same page
     const currentPath = window.location.pathname;
