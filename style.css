@@ -1,4 +1,7 @@
 @media (max-width: 767.98px) {
+  .destaque {
+    height: 200px !important;
+  }
   .card2 {
     flex-direction: column;
     gap: 40px !important;
@@ -22,8 +25,8 @@
     font-size: calc(1.1rem - 1vw);
   }
   .card-title {
-    font-size: calc(1.3rem - 1vw);
-    font-weight: 600;
+    font-size: calc(1.4rem - 1vw) !important;
+    font-weight: 600 !important;
   }
   .titulo {
     font-size: calc(1.8rem - 1vw);
@@ -45,6 +48,15 @@
     width: 90%; /* Ajuste a largura do card para mobile */
   }
 }
+.cards {
+  padding: 10px !important;
+}
+
+.card-title {
+  font-size: 21px;
+  font-weight: 600 !important;
+}
+
 html, body {
   width: 100%;
   overflow-x: hidden;
@@ -216,7 +228,7 @@ button.logar.btn.btn-primary:hover, button.logar.btn.btn-primary:active, button.
 
 .destaque {
   width: 70%;
-  height: 350px !important;
+  height: 350px;
   position: absolute;
   top: 65%;
   left: 50%;
@@ -335,7 +347,7 @@ button.logar.btn.btn-primary:hover, button.logar.btn.btn-primary:active, button.
 }
 
 .card-body {
-  padding: 11px !important;
+  padding: 5px;
 }
 
 .footer {
